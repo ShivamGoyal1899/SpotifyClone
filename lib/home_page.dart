@@ -1,5 +1,6 @@
 import 'package:SpotOn/song_page.dart';
 import 'package:flutter/material.dart';
+import 'settings_page.dart';
 
 class MyHomePage extends StatefulWidget {
   @override
@@ -43,7 +44,14 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: <Widget>[
-                  Icon(Icons.settings, color: textColor, size: 24),
+                  GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            new MaterialPageRoute(
+                                builder: (BuildContext context) => MySettingsPage()));
+                      },
+                      child: Icon(Icons.settings, color: textColor, size: 24)),
                 ],
               ),
             ),
