@@ -69,14 +69,14 @@ class _MySongPageState extends State<MySongPage> {
                   ),
                 ],
               ),
-              SizedBox(height: 30.0),
+              SizedBox(height: MediaQuery.of(context).size.height >= 350 ? 30.0 : 0.0),
               Card(
                 elevation: 8.0,
                 child: Container(
-                  constraints: BoxConstraints(maxHeight: MediaQuery.of(context).size.height >= 365 ? MediaQuery.of(context).size.height - 365 : 0),
+                  constraints: BoxConstraints(maxHeight: MediaQuery.of(context).size.height >= 350 ? MediaQuery.of(context).size.height * 0.4 : 0),
                     child: Image.asset('assets/images/cover.jpg')),
               ),
-              SizedBox(height: 40.0),
+              SizedBox(height: MediaQuery.of(context).size.height >= 350 ? 40.0 : 0.0),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[

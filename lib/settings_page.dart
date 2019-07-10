@@ -77,8 +77,7 @@ class _MySettingsPageState extends State<MySettingsPage> {
                         width: 60.0,
                         height: 60.0,
                         child: CircleAvatar(
-                          backgroundColor: Colors.brown.shade800,
-                          child: Text('S'),
+                          backgroundImage: AssetImage('assets/images/user.jpg'),
                         ),
                       ),
                       SizedBox(width: 20.0),
@@ -354,7 +353,7 @@ class _MySettingsPageState extends State<MySettingsPage> {
                         style: textStyle.merge(TextStyle(
                             fontWeight: FontWeight.w500, fontSize: 18.0))),
                     Text(
-                        'Allow other apps on your device to see what you are listening to.',
+                        'Allow other apps on your device to see what you\nare listening to.',
                         style: textStyle.merge(TextStyle(
                             fontWeight: FontWeight.w500,
                             fontSize: 13.0,
@@ -386,7 +385,7 @@ class _MySettingsPageState extends State<MySettingsPage> {
                         style: textStyle.merge(TextStyle(
                             fontWeight: FontWeight.w500, fontSize: 18.0))),
                     Text(
-                        'Keep on listening to similar tracks when your music ends.',
+                        'Keep on listening to similar tracks when your\nmusic ends.',
                         style: textStyle.merge(TextStyle(
                             fontWeight: FontWeight.w500,
                             fontSize: 13.0,
@@ -418,7 +417,7 @@ class _MySettingsPageState extends State<MySettingsPage> {
                         style: textStyle.merge(TextStyle(
                             fontWeight: FontWeight.w500, fontSize: 18.0))),
                     Text(
-                        'Play Canvases for the current track. They\'re optimized to use\nvery little data and battery.',
+                        'Play Canvases for the current track. They\'re optimized\nto use very little data and battery.',
                         style: textStyle.merge(TextStyle(
                             fontWeight: FontWeight.w500,
                             fontSize: 13.0,
@@ -498,7 +497,7 @@ class _MySettingsPageState extends State<MySettingsPage> {
                         style: textStyle.merge(TextStyle(
                             fontWeight: FontWeight.w500, fontSize: 18.0))),
                     Text(
-                        'Only show devices on your local WiFi or ethernet in the\ndevices menu',
+                        'Only show devices on your local WiFi or ethernet in\nthe devices menu',
                         style: textStyle.merge(TextStyle(
                             fontWeight: FontWeight.w500,
                             fontSize: 13.0,
@@ -645,6 +644,308 @@ class _MySettingsPageState extends State<MySettingsPage> {
               ],
             ),
             SizedBox(height: 30.0),
+            Text('Music Quality',
+                style: textStyle.merge(
+                    TextStyle(fontWeight: FontWeight.w700, fontSize: 18.0))),
+            SizedBox(height: 10.0),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text('Private session',
+                        style: textStyle.merge(TextStyle(
+                            fontWeight: FontWeight.w500, fontSize: 18.0))),
+                    Text('Higher quality uses more data.',
+                        style: textStyle.merge(TextStyle(
+                            fontWeight: FontWeight.w500,
+                            fontSize: 13.0,
+                            color: Colors.grey[500]))),
+                  ],
+                ),
+//                DropdownButton<List>[
+//                  DropdownMenuItem(),
+//                ],
+              ],
+            ),
+            SizedBox(height: 10.0),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text('Download using cellular',
+                        style: textStyle.merge(TextStyle(
+                            fontWeight: FontWeight.w500, fontSize: 18.0))),
+                    Text('Recommended Setting: Off',
+                        style: textStyle.merge(TextStyle(
+                            fontWeight: FontWeight.w500,
+                            fontSize: 13.0,
+                            color: Colors.grey[500]))),
+                  ],
+                ),
+                Switch(
+                  value: false,
+                  activeColor: Colors.green,
+                  activeTrackColor: Colors.green[900],
+                  inactiveTrackColor: Colors.grey[700],
+                  inactiveThumbColor: Colors.grey[400],
+                  materialTapTargetSize: MaterialTapTargetSize.padded,
+                  onChanged: (value) {
+                    setState(() {});
+                  },
+                ),
+              ],
+            ),
+            SizedBox(height: 10.0),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text('Equalizer',
+                        style: textStyle.merge(TextStyle(
+                            fontWeight: FontWeight.w500, fontSize: 18.0))),
+                    Text('Open the equalizer control panel.',
+                        style: textStyle.merge(TextStyle(
+                            fontWeight: FontWeight.w500,
+                            fontSize: 13.0,
+                            color: Colors.grey[500]))),
+                  ],
+                ),
+              ],
+            ),
+            SizedBox(height: 30.0),
+            Text('Storage',
+                style: textStyle.merge(
+                    TextStyle(fontWeight: FontWeight.w700, fontSize: 18.0))),
+            SizedBox(height: 10.0),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text('Delete cache',
+                        style: textStyle.merge(TextStyle(
+                            fontWeight: FontWeight.w500, fontSize: 18.0))),
+                    Text(
+                        'You can free up storage by deleting your cache.\nYour downloads won\'t be deleted.',
+                        style: textStyle.merge(TextStyle(
+                            fontWeight: FontWeight.w500,
+                            fontSize: 13.0,
+                            color: Colors.grey[500]))),
+                  ],
+                ),
+              ],
+            ),
+            SizedBox(height: 30.0),
+            Text('Notifications',
+                style: textStyle.merge(
+                    TextStyle(fontWeight: FontWeight.w700, fontSize: 18.0))),
+            SizedBox(height: 10.0),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text('Notifications',
+                        style: textStyle.merge(TextStyle(
+                            fontWeight: FontWeight.w500, fontSize: 18.0))),
+                    Text('Choose which notifications to receive.',
+                        style: textStyle.merge(TextStyle(
+                            fontWeight: FontWeight.w500,
+                            fontSize: 13.0,
+                            color: Colors.grey[500]))),
+                  ],
+                ),
+              ],
+            ),
+            SizedBox(height: 30.0),
+            Text('Advertisements',
+                style: textStyle.merge(
+                    TextStyle(fontWeight: FontWeight.w700, fontSize: 18.0))),
+            SizedBox(height: 10.0),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text('SpotOn Ad Partner Preferences',
+                        style: textStyle.merge(TextStyle(
+                            fontWeight: FontWeight.w500, fontSize: 18.0))),
+                    Text(
+                        'Control how ads are targetted to me based on information\ngathered from advertising partners.',
+                        style: textStyle.merge(TextStyle(
+                            fontWeight: FontWeight.w500,
+                            fontSize: 13.0,
+                            color: Colors.grey[500]))),
+                  ],
+                ),
+              ],
+            ),
+            SizedBox(height: 30.0),
+            Text('About',
+                style: textStyle.merge(
+                    TextStyle(fontWeight: FontWeight.w700, fontSize: 18.0))),
+            SizedBox(height: 10.0),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text('Version',
+                        style: textStyle.merge(TextStyle(
+                            fontWeight: FontWeight.w500,
+                            fontSize: 18.0,
+                            color: Colors.grey[800]))),
+                    Text('1.0.0',
+                        style: textStyle.merge(TextStyle(
+                            fontWeight: FontWeight.w500,
+                            fontSize: 13.0,
+                            color: Colors.grey[800]))),
+                  ],
+                ),
+              ],
+            ),
+            SizedBox(height: 10.0),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text('Third-part software',
+                        style: textStyle.merge(TextStyle(
+                            fontWeight: FontWeight.w500, fontSize: 18.0))),
+                    Text('Sweet software that helped us',
+                        style: textStyle.merge(TextStyle(
+                            fontWeight: FontWeight.w500,
+                            fontSize: 13.0,
+                            color: Colors.grey[500]))),
+                  ],
+                ),
+              ],
+            ),
+            SizedBox(height: 10.0),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text('Terms and Conditions',
+                        style: textStyle.merge(TextStyle(
+                            fontWeight: FontWeight.w500, fontSize: 18.0))),
+                    Text('all the stuf you need to know.',
+                        style: textStyle.merge(TextStyle(
+                            fontWeight: FontWeight.w500,
+                            fontSize: 13.0,
+                            color: Colors.grey[500]))),
+                  ],
+                ),
+              ],
+            ),
+            SizedBox(height: 10.0),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text('Privacy Policy',
+                        style: textStyle.merge(TextStyle(
+                            fontWeight: FontWeight.w500, fontSize: 18.0))),
+                    Text('Important for both of us.',
+                        style: textStyle.merge(TextStyle(
+                            fontWeight: FontWeight.w500,
+                            fontSize: 13.0,
+                            color: Colors.grey[500]))),
+                  ],
+                ),
+              ],
+            ),
+            SizedBox(height: 10.0),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text('Support',
+                        style: textStyle.merge(TextStyle(
+                            fontWeight: FontWeight.w500, fontSize: 18.0))),
+                    Text('Get help from us and the community.',
+                        style: textStyle.merge(TextStyle(
+                            fontWeight: FontWeight.w500,
+                            fontSize: 13.0,
+                            color: Colors.grey[500]))),
+                  ],
+                ),
+              ],
+            ),
+            SizedBox(height: 30.0),
+            Text('Other',
+                style: textStyle.merge(
+                    TextStyle(fontWeight: FontWeight.w700, fontSize: 18.0))),
+            SizedBox(height: 10.0),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text('Storage',
+                        style: textStyle.merge(TextStyle(
+                            fontWeight: FontWeight.w500, fontSize: 18.0))),
+                    Text('Choose where to store your music data.',
+                        style: textStyle.merge(TextStyle(
+                            fontWeight: FontWeight.w500,
+                            fontSize: 13.0,
+                            color: Colors.grey[500]))),
+                  ],
+                ),
+              ],
+            ),
+            SizedBox(height: 10.0),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text('Log out',
+                        style: textStyle.merge(TextStyle(
+                            fontWeight: FontWeight.w500, fontSize: 18.0))),
+                    Text('You are logged in as Shivam Goyal',
+                        style: textStyle.merge(TextStyle(
+                            fontWeight: FontWeight.w500,
+                            fontSize: 13.0,
+                            color: Colors.grey[500]))),
+                  ],
+                ),
+              ],
+            ),
+            SizedBox(height: 20.0),
           ],
         ),
       ),
