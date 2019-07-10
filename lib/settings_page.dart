@@ -9,6 +9,9 @@ class MySettingsPage extends StatefulWidget {
 class _MySettingsPageState extends State<MySettingsPage> {
   int _cIndex = 0;
 
+  double _valueSlider = 4.0;
+  String _valueDrop = '1';
+
   void _incrementTab(index) {
     setState(() {
       _cIndex = index;
@@ -17,7 +20,6 @@ class _MySettingsPageState extends State<MySettingsPage> {
 
   @override
   Widget build(BuildContext context) {
-    var _value = 4.0;
     var textColor = Color.fromRGBO(250, 250, 250, 0.95);
     var textStyle =
         TextStyle(fontFamily: 'PT Sans', color: textColor, letterSpacing: 0.2);
@@ -198,13 +200,16 @@ class _MySettingsPageState extends State<MySettingsPage> {
                           RoundSliderOverlayShape(overlayRadius: 12.0),
                     ),
                     child: Slider(
-                      value: _value,
+                      value: _valueSlider,
                       activeColor: Colors.white,
                       inactiveColor: Colors.grey[800],
                       min: 0.0,
                       max: 12.0,
-                      onChanged: (value) {
-                        _value = value;
+                      onChanged: (valueSlider) {
+                        setState(() {
+                          _valueSlider = valueSlider;
+
+                        });
                       },
                     ),
                   ),
@@ -665,9 +670,69 @@ class _MySettingsPageState extends State<MySettingsPage> {
                             color: Colors.grey[500]))),
                   ],
                 ),
-//                DropdownButton<List>[
-//                  DropdownMenuItem(),
-//                ],
+                Theme(
+
+                    data: Theme.of(context).copyWith(
+                      canvasColor: Colors.grey[900],
+                    ),
+                  child: DropdownButton<String>(
+                    icon: Icon(Icons.arrow_drop_down, size: 24.0,),
+                    iconEnabledColor: Colors.grey[500],
+                    items: [
+                      DropdownMenuItem<String>(
+                        value: "1",
+                        child: Text(
+                          "Automatic",
+                          style: textStyle.merge(TextStyle(
+                              fontWeight: FontWeight.w500, fontSize: 18.0)),
+                        ),
+                      ),
+                      DropdownMenuItem<String>(
+                        value: "2",
+                        child: Text(
+                          "Low",
+                          style: textStyle.merge(TextStyle(
+                              fontWeight: FontWeight.w500, fontSize: 18.0)),
+                        ),
+                      ),
+                      DropdownMenuItem<String>(
+                        value: "3",
+                        child: Text(
+                          "Normal",
+                          style: textStyle.merge(TextStyle(
+                              fontWeight: FontWeight.w500, fontSize: 18.0)),
+                        ),
+                      ),
+                      DropdownMenuItem<String>(
+                        value: "4",
+                        child: Text(
+                          "High",
+                          style: textStyle.merge(TextStyle(
+                              fontWeight: FontWeight.w500, fontSize: 18.0)),
+                        ),
+                      ),
+                      DropdownMenuItem<String>(
+                        value: "5",
+                        child: Text(
+                          "Very high",
+                          style: textStyle.merge(TextStyle(
+                              fontWeight: FontWeight.w500, fontSize: 18.0)),
+                        ),
+                      ),
+                    ],
+                    onChanged: (value) {
+                      setState(() {
+                      _valueDrop = value;
+                      });
+                    },
+                    value: _valueDrop,
+                    elevation: 2,
+                    style: textStyle.merge(TextStyle(
+                        fontWeight: FontWeight.w500, fontSize: 14.0)),
+                    isDense: true,
+                    iconSize: 40.0,
+                  ),
+                )
               ],
             ),
             SizedBox(height: 10.0),
