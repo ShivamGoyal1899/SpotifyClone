@@ -1,5 +1,5 @@
-import 'package:SpotOn/playlist_page.dart';
-import 'package:SpotOn/song_page.dart';
+import 'playlist_page.dart';
+import 'song_page.dart';
 import 'package:flutter/material.dart';
 import 'settings_page.dart';
 
@@ -49,7 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       onTap: () {
                         Navigator.push(
                             context,
-                            new MaterialPageRoute(
+                            MaterialPageRoute(
                                 builder: (BuildContext context) =>
                                     MySettingsPage()));
                       },
@@ -74,7 +74,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     onTap: () {
                       Navigator.push(
                           context,
-                          new MaterialPageRoute(
+                          MaterialPageRoute(
                               builder: (BuildContext context) =>
                                   MyPlaylistPage()));
                     },
@@ -86,14 +86,14 @@ class _MyHomePageState extends State<MyHomePage> {
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
                             image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
+                              image: AssetImage('assets/images/gallery6.jpg'),
                             ),
                           ),
                           margin: EdgeInsets.symmetric(horizontal: 7.0),
                         ),
                         SizedBox(height: 3.0),
                         Text(
-                          'Imagine Dragons',
+                          'Your Daily Mix',
                           style: textStyle.merge(TextStyle(
                               fontSize: 14.0, fontWeight: FontWeight.w700)),
                         )
@@ -106,7 +106,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         onTap: () {
                           Navigator.push(
                               context,
-                              new MaterialPageRoute(
+                              MaterialPageRoute(
                                   builder: (BuildContext context) =>
                                       MyPlaylistPage()));
                         },
@@ -114,7 +114,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           onTap: () {
                             Navigator.push(
                                 context,
-                                new MaterialPageRoute(
+                                MaterialPageRoute(
                                     builder: (BuildContext context) =>
                                         MyPlaylistPage()));
                           },
@@ -123,7 +123,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             height: 150.0,
                             decoration: BoxDecoration(
                               image: DecorationImage(
-                                image: AssetImage('assets/images/cover.jpg'),
+                                image: AssetImage('assets/images/gallery3.jpg'),
                               ),
                             ),
                             margin: EdgeInsets.symmetric(horizontal: 7.0),
@@ -132,7 +132,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       SizedBox(height: 3.0),
                       Text(
-                        'Imagine Dragons',
+                        'Marshmellow',
                         style: textStyle.merge(TextStyle(
                             fontSize: 14.0, fontWeight: FontWeight.w700)),
                       )
@@ -144,7 +144,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         onTap: () {
                           Navigator.push(
                               context,
-                              new MaterialPageRoute(
+                              MaterialPageRoute(
                                   builder: (BuildContext context) =>
                                       MyPlaylistPage()));
                         },
@@ -153,7 +153,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           height: 150.0,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
+                              image: AssetImage('assets/images/gallery1.jpg'),
                             ),
                           ),
                           margin: EdgeInsets.symmetric(horizontal: 7.0),
@@ -173,7 +173,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         onTap: () {
                           Navigator.push(
                               context,
-                              new MaterialPageRoute(
+                              MaterialPageRoute(
                                   builder: (BuildContext context) =>
                                       MyPlaylistPage()));
                         },
@@ -182,7 +182,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           height: 150.0,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
+                              image: AssetImage('assets/images/gallery4.jpg'),
                             ),
                           ),
                           margin: EdgeInsets.symmetric(horizontal: 7.0),
@@ -202,7 +202,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         onTap: () {
                           Navigator.push(
                               context,
-                              new MaterialPageRoute(
+                              MaterialPageRoute(
                                   builder: (BuildContext context) =>
                                       MyPlaylistPage()));
                         },
@@ -211,7 +211,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           height: 150.0,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
+                              image: AssetImage('assets/images/gallery2.jpg'),
                             ),
                           ),
                           margin: EdgeInsets.symmetric(horizontal: 7.0),
@@ -231,7 +231,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         onTap: () {
                           Navigator.push(
                               context,
-                              new MaterialPageRoute(
+                              MaterialPageRoute(
                                   builder: (BuildContext context) =>
                                       MyPlaylistPage()));
                         },
@@ -240,7 +240,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           height: 150.0,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
+                              image: AssetImage('assets/images/gallery6.jpg'),
                             ),
                           ),
                           margin: EdgeInsets.symmetric(horizontal: 7.0),
@@ -271,7 +271,7 @@ class _MyHomePageState extends State<MyHomePage> {
               onTap: () {
                 Navigator.push(
                     context,
-                    new MaterialPageRoute(
+                    MaterialPageRoute(
                         builder: (BuildContext context) => MyPlaylistPage()));
               },
               child: Column(
@@ -279,12 +279,14 @@ class _MyHomePageState extends State<MyHomePage> {
                   Container(
                       width: 260.0,
                       height: 260.0,
-                      child: Image.asset('assets/images/cover.jpg')),
+                      child: Image.asset('assets/images/gallery6.jpg')),
                   SizedBox(height: 5.0),
                   Text(
                     'Dimitri Vegas & Like Mike',
-                    style: textStyle.merge(
-                        TextStyle(color: Colors.grey[500], fontSize: 16.0, fontWeight: FontWeight.w600)),
+                    style: textStyle.merge(TextStyle(
+                        color: Colors.grey[500],
+                        fontSize: 16.0,
+                        fontWeight: FontWeight.w600)),
                   )
                 ],
               ),
@@ -300,7 +302,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         onTap: () {
                           Navigator.push(
                               context,
-                              new MaterialPageRoute(
+                              MaterialPageRoute(
                                   builder: (BuildContext context) =>
                                       MyPlaylistPage()));
                         },
@@ -309,7 +311,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           height: 150.0,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
+                              image: AssetImage('assets/images/gallery2.jpg'),
                             ),
                           ),
                           margin: EdgeInsets.symmetric(horizontal: 7.0),
@@ -329,7 +331,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         onTap: () {
                           Navigator.push(
                               context,
-                              new MaterialPageRoute(
+                              MaterialPageRoute(
                                   builder: (BuildContext context) =>
                                       MyPlaylistPage()));
                         },
@@ -338,7 +340,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           height: 150.0,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
+                              image: AssetImage('assets/images/gallery4.jpg'),
                             ),
                           ),
                           margin: EdgeInsets.symmetric(horizontal: 7.0),
@@ -358,7 +360,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         onTap: () {
                           Navigator.push(
                               context,
-                              new MaterialPageRoute(
+                              MaterialPageRoute(
                                   builder: (BuildContext context) =>
                                       MyPlaylistPage()));
                         },
@@ -367,7 +369,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           height: 150.0,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
+                              image: AssetImage('assets/images/gallery4.jpg'),
                             ),
                           ),
                           margin: EdgeInsets.symmetric(horizontal: 7.0),
@@ -387,7 +389,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         onTap: () {
                           Navigator.push(
                               context,
-                              new MaterialPageRoute(
+                              MaterialPageRoute(
                                   builder: (BuildContext context) =>
                                       MyPlaylistPage()));
                         },
@@ -396,7 +398,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           height: 150.0,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
+                              image: AssetImage('assets/images/gallery5.jpg'),
                             ),
                           ),
                           margin: EdgeInsets.symmetric(horizontal: 7.0),
@@ -416,7 +418,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         onTap: () {
                           Navigator.push(
                               context,
-                              new MaterialPageRoute(
+                              MaterialPageRoute(
                                   builder: (BuildContext context) =>
                                       MyPlaylistPage()));
                         },
@@ -425,7 +427,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           height: 150.0,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
+                              image: AssetImage('assets/images/gallery5.jpg'),
                             ),
                           ),
                           margin: EdgeInsets.symmetric(horizontal: 7.0),
@@ -445,7 +447,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         onTap: () {
                           Navigator.push(
                               context,
-                              new MaterialPageRoute(
+                              MaterialPageRoute(
                                   builder: (BuildContext context) =>
                                       MyPlaylistPage()));
                         },
@@ -454,7 +456,36 @@ class _MyHomePageState extends State<MyHomePage> {
                           height: 150.0,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
+                              image: AssetImage('assets/images/gallery6.jpg'),
+                            ),
+                          ),
+                          margin: EdgeInsets.symmetric(horizontal: 7.0),
+                        ),
+                      ),
+                      SizedBox(height: 3.0),
+                      Text(
+                        'Imagine Dragons',
+                        style: textStyle.merge(TextStyle(
+                            fontSize: 14.0, fontWeight: FontWeight.w700)),
+                      )
+                    ],
+                  ),
+                  Column(
+                    children: <Widget>[
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (BuildContext context) =>
+                                      MyPlaylistPage()));
+                        },
+                        child: Container(
+                          width: 150.0,
+                          height: 150.0,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: AssetImage('assets/images/gallery1.jpg'),
                             ),
                           ),
                           margin: EdgeInsets.symmetric(horizontal: 7.0),
@@ -491,7 +522,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         onTap: () {
                           Navigator.push(
                               context,
-                              new MaterialPageRoute(
+                              MaterialPageRoute(
                                   builder: (BuildContext context) =>
                                       MyPlaylistPage()));
                         },
@@ -500,7 +531,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           height: 150.0,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
+                              image: AssetImage('assets/images/gallery4.jpg'),
                             ),
                           ),
                           margin: EdgeInsets.symmetric(horizontal: 7.0),
@@ -520,7 +551,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         onTap: () {
                           Navigator.push(
                               context,
-                              new MaterialPageRoute(
+                              MaterialPageRoute(
                                   builder: (BuildContext context) =>
                                       MyPlaylistPage()));
                         },
@@ -529,7 +560,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           height: 150.0,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
+                              image: AssetImage('assets/images/gallery2.jpg'),
                             ),
                           ),
                           margin: EdgeInsets.symmetric(horizontal: 7.0),
@@ -549,7 +580,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         onTap: () {
                           Navigator.push(
                               context,
-                              new MaterialPageRoute(
+                              MaterialPageRoute(
                                   builder: (BuildContext context) =>
                                       MyPlaylistPage()));
                         },
@@ -558,7 +589,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           height: 150.0,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
+                              image: AssetImage('assets/images/gallery3.jpg'),
                             ),
                           ),
                           margin: EdgeInsets.symmetric(horizontal: 7.0),
@@ -578,7 +609,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         onTap: () {
                           Navigator.push(
                               context,
-                              new MaterialPageRoute(
+                              MaterialPageRoute(
                                   builder: (BuildContext context) =>
                                       MyPlaylistPage()));
                         },
@@ -587,7 +618,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           height: 150.0,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
+                              image: AssetImage('assets/images/gallery6.jpg'),
                             ),
                           ),
                           margin: EdgeInsets.symmetric(horizontal: 7.0),
@@ -607,7 +638,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         onTap: () {
                           Navigator.push(
                               context,
-                              new MaterialPageRoute(
+                              MaterialPageRoute(
                                   builder: (BuildContext context) =>
                                       MyPlaylistPage()));
                         },
@@ -616,7 +647,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           height: 150.0,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
+                              image: AssetImage('assets/images/gallery5.jpg'),
                             ),
                           ),
                           margin: EdgeInsets.symmetric(horizontal: 7.0),
@@ -636,7 +667,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         onTap: () {
                           Navigator.push(
                               context,
-                              new MaterialPageRoute(
+                              MaterialPageRoute(
                                   builder: (BuildContext context) =>
                                       MyPlaylistPage()));
                         },
@@ -645,7 +676,65 @@ class _MyHomePageState extends State<MyHomePage> {
                           height: 150.0,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
+                              image: AssetImage('assets/images/gallery4.jpg'),
+                            ),
+                          ),
+                          margin: EdgeInsets.symmetric(horizontal: 7.0),
+                        ),
+                      ),
+                      SizedBox(height: 3.0),
+                      Text(
+                        'Imagine Dragons',
+                        style: textStyle.merge(TextStyle(
+                            fontSize: 14.0, fontWeight: FontWeight.w700)),
+                      )
+                    ],
+                  ),
+                  Column(
+                    children: <Widget>[
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (BuildContext context) =>
+                                      MyPlaylistPage()));
+                        },
+                        child: Container(
+                          width: 150.0,
+                          height: 150.0,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: AssetImage('assets/images/gallery6.jpg'),
+                            ),
+                          ),
+                          margin: EdgeInsets.symmetric(horizontal: 7.0),
+                        ),
+                      ),
+                      SizedBox(height: 3.0),
+                      Text(
+                        'Imagine Dragons',
+                        style: textStyle.merge(TextStyle(
+                            fontSize: 14.0, fontWeight: FontWeight.w700)),
+                      )
+                    ],
+                  ),
+                  Column(
+                    children: <Widget>[
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (BuildContext context) =>
+                                      MyPlaylistPage()));
+                        },
+                        child: Container(
+                          width: 150.0,
+                          height: 150.0,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: AssetImage('assets/images/gallery5.jpg'),
                             ),
                           ),
                           margin: EdgeInsets.symmetric(horizontal: 7.0),
@@ -682,7 +771,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         onTap: () {
                           Navigator.push(
                               context,
-                              new MaterialPageRoute(
+                              MaterialPageRoute(
                                   builder: (BuildContext context) =>
                                       MyPlaylistPage()));
                         },
@@ -691,7 +780,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           height: 150.0,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
+                              image: AssetImage('assets/images/gallery5.jpg'),
                             ),
                           ),
                           margin: EdgeInsets.symmetric(horizontal: 7.0),
@@ -711,7 +800,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         onTap: () {
                           Navigator.push(
                               context,
-                              new MaterialPageRoute(
+                              MaterialPageRoute(
                                   builder: (BuildContext context) =>
                                       MyPlaylistPage()));
                         },
@@ -720,7 +809,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           height: 150.0,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
+                              image: AssetImage('assets/images/gallery4.jpg'),
                             ),
                           ),
                           margin: EdgeInsets.symmetric(horizontal: 7.0),
@@ -740,7 +829,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         onTap: () {
                           Navigator.push(
                               context,
-                              new MaterialPageRoute(
+                              MaterialPageRoute(
                                   builder: (BuildContext context) =>
                                       MyPlaylistPage()));
                         },
@@ -749,7 +838,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           height: 150.0,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
+                              image: AssetImage('assets/images/gallery1.jpg'),
                             ),
                           ),
                           margin: EdgeInsets.symmetric(horizontal: 7.0),
@@ -769,7 +858,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         onTap: () {
                           Navigator.push(
                               context,
-                              new MaterialPageRoute(
+                              MaterialPageRoute(
                                   builder: (BuildContext context) =>
                                       MyPlaylistPage()));
                         },
@@ -778,7 +867,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           height: 150.0,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
+                              image: AssetImage('assets/images/gallery5.jpg'),
                             ),
                           ),
                           margin: EdgeInsets.symmetric(horizontal: 7.0),
@@ -798,7 +887,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         onTap: () {
                           Navigator.push(
                               context,
-                              new MaterialPageRoute(
+                              MaterialPageRoute(
                                   builder: (BuildContext context) =>
                                       MyPlaylistPage()));
                         },
@@ -807,7 +896,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           height: 150.0,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
+                              image: AssetImage('assets/images/gallery3.jpg'),
                             ),
                           ),
                           margin: EdgeInsets.symmetric(horizontal: 7.0),
@@ -827,7 +916,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         onTap: () {
                           Navigator.push(
                               context,
-                              new MaterialPageRoute(
+                              MaterialPageRoute(
                                   builder: (BuildContext context) =>
                                       MyPlaylistPage()));
                         },
@@ -836,7 +925,94 @@ class _MyHomePageState extends State<MyHomePage> {
                           height: 150.0,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
+                              image: AssetImage('assets/images/gallery4.jpg'),
+                            ),
+                          ),
+                          margin: EdgeInsets.symmetric(horizontal: 7.0),
+                        ),
+                      ),
+                      SizedBox(height: 3.0),
+                      Text(
+                        'Imagine Dragons',
+                        style: textStyle.merge(TextStyle(
+                            fontSize: 14.0, fontWeight: FontWeight.w700)),
+                      )
+                    ],
+                  ),
+                  Column(
+                    children: <Widget>[
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (BuildContext context) =>
+                                      MyPlaylistPage()));
+                        },
+                        child: Container(
+                          width: 150.0,
+                          height: 150.0,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: AssetImage('assets/images/gallery5.jpg'),
+                            ),
+                          ),
+                          margin: EdgeInsets.symmetric(horizontal: 7.0),
+                        ),
+                      ),
+                      SizedBox(height: 3.0),
+                      Text(
+                        'Imagine Dragons',
+                        style: textStyle.merge(TextStyle(
+                            fontSize: 14.0, fontWeight: FontWeight.w700)),
+                      )
+                    ],
+                  ),
+                  Column(
+                    children: <Widget>[
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (BuildContext context) =>
+                                      MyPlaylistPage()));
+                        },
+                        child: Container(
+                          width: 150.0,
+                          height: 150.0,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: AssetImage('assets/images/gallery4.jpg'),
+                            ),
+                          ),
+                          margin: EdgeInsets.symmetric(horizontal: 7.0),
+                        ),
+                      ),
+                      SizedBox(height: 3.0),
+                      Text(
+                        'Imagine Dragons',
+                        style: textStyle.merge(TextStyle(
+                            fontSize: 14.0, fontWeight: FontWeight.w700)),
+                      )
+                    ],
+                  ),
+                  Column(
+                    children: <Widget>[
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (BuildContext context) =>
+                                      MyPlaylistPage()));
+                        },
+                        child: Container(
+                          width: 150.0,
+                          height: 150.0,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: AssetImage('assets/images/gallery6.jpg'),
                             ),
                           ),
                           margin: EdgeInsets.symmetric(horizontal: 7.0),
@@ -873,7 +1049,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         onTap: () {
                           Navigator.push(
                               context,
-                              new MaterialPageRoute(
+                              MaterialPageRoute(
                                   builder: (BuildContext context) =>
                                       MyPlaylistPage()));
                         },
@@ -882,7 +1058,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           height: 150.0,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
+                              image: AssetImage('assets/images/gallery3.jpg'),
                             ),
                           ),
                           margin: EdgeInsets.symmetric(horizontal: 7.0),
@@ -902,7 +1078,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         onTap: () {
                           Navigator.push(
                               context,
-                              new MaterialPageRoute(
+                              MaterialPageRoute(
                                   builder: (BuildContext context) =>
                                       MyPlaylistPage()));
                         },
@@ -911,7 +1087,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           height: 150.0,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
+                              image: AssetImage('assets/images/gallery2.jpg'),
                             ),
                           ),
                           margin: EdgeInsets.symmetric(horizontal: 7.0),
@@ -931,7 +1107,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         onTap: () {
                           Navigator.push(
                               context,
-                              new MaterialPageRoute(
+                              MaterialPageRoute(
                                   builder: (BuildContext context) =>
                                       MyPlaylistPage()));
                         },
@@ -940,7 +1116,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           height: 150.0,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
+                              image: AssetImage('assets/images/gallery3.jpg'),
                             ),
                           ),
                           margin: EdgeInsets.symmetric(horizontal: 7.0),
@@ -960,7 +1136,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         onTap: () {
                           Navigator.push(
                               context,
-                              new MaterialPageRoute(
+                              MaterialPageRoute(
                                   builder: (BuildContext context) =>
                                       MyPlaylistPage()));
                         },
@@ -969,7 +1145,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           height: 150.0,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
+                              image: AssetImage('assets/images/gallery4.jpg'),
                             ),
                           ),
                           margin: EdgeInsets.symmetric(horizontal: 7.0),
@@ -989,7 +1165,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         onTap: () {
                           Navigator.push(
                               context,
-                              new MaterialPageRoute(
+                              MaterialPageRoute(
                                   builder: (BuildContext context) =>
                                       MyPlaylistPage()));
                         },
@@ -998,7 +1174,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           height: 150.0,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
+                              image: AssetImage('assets/images/gallery5.jpg'),
                             ),
                           ),
                           margin: EdgeInsets.symmetric(horizontal: 7.0),
@@ -1018,7 +1194,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         onTap: () {
                           Navigator.push(
                               context,
-                              new MaterialPageRoute(
+                              MaterialPageRoute(
                                   builder: (BuildContext context) =>
                                       MyPlaylistPage()));
                         },
@@ -1027,53 +1203,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           height: 150.0,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
-                            ),
-                          ),
-                          margin: EdgeInsets.symmetric(horizontal: 7.0),
-                        ),
-                      ),
-                      SizedBox(height: 3.0),
-                      Text(
-                        'Imagine Dragons',
-                        style: textStyle.merge(TextStyle(
-                            fontSize: 14.0, fontWeight: FontWeight.w700)),
-                      )
-                    ],
-                  ),
-                ],
-              ),
-            ),
-            SizedBox(height: 60.0),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16.0),
-              child: Text(
-                'English new releases',
-                style: textStyle.merge(
-                    TextStyle(fontSize: 26.0, fontWeight: FontWeight.w700)),
-              ),
-            ),
-            SizedBox(height: 20.0),
-            SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(
-                children: <Widget>[
-                  Column(
-                    children: <Widget>[
-                      GestureDetector(
-                        onTap: () {
-                          Navigator.push(
-                              context,
-                              new MaterialPageRoute(
-                                  builder: (BuildContext context) =>
-                                      MyPlaylistPage()));
-                        },
-                        child: Container(
-                          width: 150.0,
-                          height: 150.0,
-                          decoration: BoxDecoration(
-                            image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
+                              image: AssetImage('assets/images/gallery5.jpg'),
                             ),
                           ),
                           margin: EdgeInsets.symmetric(horizontal: 7.0),
@@ -1093,7 +1223,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         onTap: () {
                           Navigator.push(
                               context,
-                              new MaterialPageRoute(
+                              MaterialPageRoute(
                                   builder: (BuildContext context) =>
                                       MyPlaylistPage()));
                         },
@@ -1102,123 +1232,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           height: 150.0,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
-                            ),
-                          ),
-                          margin: EdgeInsets.symmetric(horizontal: 7.0),
-                        ),
-                      ),
-                      SizedBox(height: 3.0),
-                      Text(
-                        'Imagine Dragons',
-                        style: textStyle.merge(TextStyle(
-                            fontSize: 14.0, fontWeight: FontWeight.w700)),
-                      )
-                    ],
-                  ),
-                  Column(
-                    children: <Widget>[
-                      GestureDetector(
-                        onTap: () {
-                          Navigator.push(
-                              context,
-                              new MaterialPageRoute(
-                                  builder: (BuildContext context) =>
-                                      MyPlaylistPage()));
-                        },
-                        child: Container(
-                          width: 150.0,
-                          height: 150.0,
-                          decoration: BoxDecoration(
-                            image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
-                            ),
-                          ),
-                          margin: EdgeInsets.symmetric(horizontal: 7.0),
-                        ),
-                      ),
-                      SizedBox(height: 3.0),
-                      Text(
-                        'Imagine Dragons',
-                        style: textStyle.merge(TextStyle(
-                            fontSize: 14.0, fontWeight: FontWeight.w700)),
-                      )
-                    ],
-                  ),
-                  Column(
-                    children: <Widget>[
-                      GestureDetector(
-                        onTap: () {
-                          Navigator.push(
-                              context,
-                              new MaterialPageRoute(
-                                  builder: (BuildContext context) =>
-                                      MyPlaylistPage()));
-                        },
-                        child: Container(
-                          width: 150.0,
-                          height: 150.0,
-                          decoration: BoxDecoration(
-                            image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
-                            ),
-                          ),
-                          margin: EdgeInsets.symmetric(horizontal: 7.0),
-                        ),
-                      ),
-                      SizedBox(height: 3.0),
-                      Text(
-                        'Imagine Dragons',
-                        style: textStyle.merge(TextStyle(
-                            fontSize: 14.0, fontWeight: FontWeight.w700)),
-                      )
-                    ],
-                  ),
-                  Column(
-                    children: <Widget>[
-                      GestureDetector(
-                        onTap: () {
-                          Navigator.push(
-                              context,
-                              new MaterialPageRoute(
-                                  builder: (BuildContext context) =>
-                                      MyPlaylistPage()));
-                        },
-                        child: Container(
-                          width: 150.0,
-                          height: 150.0,
-                          decoration: BoxDecoration(
-                            image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
-                            ),
-                          ),
-                          margin: EdgeInsets.symmetric(horizontal: 7.0),
-                        ),
-                      ),
-                      SizedBox(height: 3.0),
-                      Text(
-                        'Imagine Dragons',
-                        style: textStyle.merge(TextStyle(
-                            fontSize: 14.0, fontWeight: FontWeight.w700)),
-                      )
-                    ],
-                  ),
-                  Column(
-                    children: <Widget>[
-                      GestureDetector(
-                        onTap: () {
-                          Navigator.push(
-                              context,
-                              new MaterialPageRoute(
-                                  builder: (BuildContext context) =>
-                                      MyPlaylistPage()));
-                        },
-                        child: Container(
-                          width: 150.0,
-                          height: 150.0,
-                          decoration: BoxDecoration(
-                            image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
+                              image: AssetImage('assets/images/gallery3.jpg'),
                             ),
                           ),
                           margin: EdgeInsets.symmetric(horizontal: 7.0),
@@ -1239,7 +1253,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16.0),
               child: Text(
-                'Global new releases',
+                'English   releases',
                 style: textStyle.merge(
                     TextStyle(fontSize: 26.0, fontWeight: FontWeight.w700)),
               ),
@@ -1255,7 +1269,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         onTap: () {
                           Navigator.push(
                               context,
-                              new MaterialPageRoute(
+                              MaterialPageRoute(
                                   builder: (BuildContext context) =>
                                       MyPlaylistPage()));
                         },
@@ -1264,7 +1278,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           height: 150.0,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
+                              image: AssetImage('assets/images/gallery4.jpg'),
                             ),
                           ),
                           margin: EdgeInsets.symmetric(horizontal: 7.0),
@@ -1284,7 +1298,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         onTap: () {
                           Navigator.push(
                               context,
-                              new MaterialPageRoute(
+                              MaterialPageRoute(
                                   builder: (BuildContext context) =>
                                       MyPlaylistPage()));
                         },
@@ -1293,7 +1307,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           height: 150.0,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
+                              image: AssetImage('assets/images/gallery1.jpg'),
                             ),
                           ),
                           margin: EdgeInsets.symmetric(horizontal: 7.0),
@@ -1313,7 +1327,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         onTap: () {
                           Navigator.push(
                               context,
-                              new MaterialPageRoute(
+                              MaterialPageRoute(
                                   builder: (BuildContext context) =>
                                       MyPlaylistPage()));
                         },
@@ -1322,7 +1336,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           height: 150.0,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
+                              image: AssetImage('assets/images/gallery2.jpg'),
                             ),
                           ),
                           margin: EdgeInsets.symmetric(horizontal: 7.0),
@@ -1342,7 +1356,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         onTap: () {
                           Navigator.push(
                               context,
-                              new MaterialPageRoute(
+                              MaterialPageRoute(
                                   builder: (BuildContext context) =>
                                       MyPlaylistPage()));
                         },
@@ -1351,7 +1365,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           height: 150.0,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
+                              image: AssetImage('assets/images/gallery3.jpg'),
                             ),
                           ),
                           margin: EdgeInsets.symmetric(horizontal: 7.0),
@@ -1371,7 +1385,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         onTap: () {
                           Navigator.push(
                               context,
-                              new MaterialPageRoute(
+                              MaterialPageRoute(
                                   builder: (BuildContext context) =>
                                       MyPlaylistPage()));
                         },
@@ -1380,7 +1394,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           height: 150.0,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
+                              image: AssetImage('assets/images/gallery2.jpg'),
                             ),
                           ),
                           margin: EdgeInsets.symmetric(horizontal: 7.0),
@@ -1400,7 +1414,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         onTap: () {
                           Navigator.push(
                               context,
-                              new MaterialPageRoute(
+                              MaterialPageRoute(
                                   builder: (BuildContext context) =>
                                       MyPlaylistPage()));
                         },
@@ -1409,7 +1423,256 @@ class _MyHomePageState extends State<MyHomePage> {
                           height: 150.0,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
+                              image: AssetImage('assets/images/gallery5.jpg'),
+                            ),
+                          ),
+                          margin: EdgeInsets.symmetric(horizontal: 7.0),
+                        ),
+                      ),
+                      SizedBox(height: 3.0),
+                      Text(
+                        'Imagine Dragons',
+                        style: textStyle.merge(TextStyle(
+                            fontSize: 14.0, fontWeight: FontWeight.w700)),
+                      )
+                    ],
+                  ),
+                  Column(
+                    children: <Widget>[
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (BuildContext context) =>
+                                      MyPlaylistPage()));
+                        },
+                        child: Container(
+                          width: 150.0,
+                          height: 150.0,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: AssetImage('assets/images/gallery6.jpg'),
+                            ),
+                          ),
+                          margin: EdgeInsets.symmetric(horizontal: 7.0),
+                        ),
+                      ),
+                      SizedBox(height: 3.0),
+                      Text(
+                        'Imagine Dragons',
+                        style: textStyle.merge(TextStyle(
+                            fontSize: 14.0, fontWeight: FontWeight.w700)),
+                      )
+                    ],
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(height: 60.0),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16.0),
+              child: Text(
+                'Global   releases',
+                style: textStyle.merge(
+                    TextStyle(fontSize: 26.0, fontWeight: FontWeight.w700)),
+              ),
+            ),
+            SizedBox(height: 20.0),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: <Widget>[
+                  Column(
+                    children: <Widget>[
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (BuildContext context) =>
+                                      MyPlaylistPage()));
+                        },
+                        child: Container(
+                          width: 150.0,
+                          height: 150.0,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: AssetImage('assets/images/gallery6.jpg'),
+                            ),
+                          ),
+                          margin: EdgeInsets.symmetric(horizontal: 7.0),
+                        ),
+                      ),
+                      SizedBox(height: 3.0),
+                      Text(
+                        'Imagine Dragons',
+                        style: textStyle.merge(TextStyle(
+                            fontSize: 14.0, fontWeight: FontWeight.w700)),
+                      )
+                    ],
+                  ),
+                  Column(
+                    children: <Widget>[
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (BuildContext context) =>
+                                      MyPlaylistPage()));
+                        },
+                        child: Container(
+                          width: 150.0,
+                          height: 150.0,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: AssetImage('assets/images/gallery2.jpg'),
+                            ),
+                          ),
+                          margin: EdgeInsets.symmetric(horizontal: 7.0),
+                        ),
+                      ),
+                      SizedBox(height: 3.0),
+                      Text(
+                        'Imagine Dragons',
+                        style: textStyle.merge(TextStyle(
+                            fontSize: 14.0, fontWeight: FontWeight.w700)),
+                      )
+                    ],
+                  ),
+                  Column(
+                    children: <Widget>[
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (BuildContext context) =>
+                                      MyPlaylistPage()));
+                        },
+                        child: Container(
+                          width: 150.0,
+                          height: 150.0,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: AssetImage('assets/images/gallery3.jpg'),
+                            ),
+                          ),
+                          margin: EdgeInsets.symmetric(horizontal: 7.0),
+                        ),
+                      ),
+                      SizedBox(height: 3.0),
+                      Text(
+                        'Imagine Dragons',
+                        style: textStyle.merge(TextStyle(
+                            fontSize: 14.0, fontWeight: FontWeight.w700)),
+                      )
+                    ],
+                  ),
+                  Column(
+                    children: <Widget>[
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (BuildContext context) =>
+                                      MyPlaylistPage()));
+                        },
+                        child: Container(
+                          width: 150.0,
+                          height: 150.0,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: AssetImage('assets/images/gallery1.jpg'),
+                            ),
+                          ),
+                          margin: EdgeInsets.symmetric(horizontal: 7.0),
+                        ),
+                      ),
+                      SizedBox(height: 3.0),
+                      Text(
+                        'Imagine Dragons',
+                        style: textStyle.merge(TextStyle(
+                            fontSize: 14.0, fontWeight: FontWeight.w700)),
+                      )
+                    ],
+                  ),
+                  Column(
+                    children: <Widget>[
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (BuildContext context) =>
+                                      MyPlaylistPage()));
+                        },
+                        child: Container(
+                          width: 150.0,
+                          height: 150.0,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: AssetImage('assets/images/gallery4.jpg'),
+                            ),
+                          ),
+                          margin: EdgeInsets.symmetric(horizontal: 7.0),
+                        ),
+                      ),
+                      SizedBox(height: 3.0),
+                      Text(
+                        'Imagine Dragons',
+                        style: textStyle.merge(TextStyle(
+                            fontSize: 14.0, fontWeight: FontWeight.w700)),
+                      )
+                    ],
+                  ),
+                  Column(
+                    children: <Widget>[
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (BuildContext context) =>
+                                      MyPlaylistPage()));
+                        },
+                        child: Container(
+                          width: 150.0,
+                          height: 150.0,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: AssetImage('assets/images/gallery5.jpg'),
+                            ),
+                          ),
+                          margin: EdgeInsets.symmetric(horizontal: 7.0),
+                        ),
+                      ),
+                      SizedBox(height: 3.0),
+                      Text(
+                        'Imagine Dragons',
+                        style: textStyle.merge(TextStyle(
+                            fontSize: 14.0, fontWeight: FontWeight.w700)),
+                      )
+                    ],
+                  ),
+                  Column(
+                    children: <Widget>[
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (BuildContext context) =>
+                                      MyPlaylistPage()));
+                        },
+                        child: Container(
+                          width: 150.0,
+                          height: 150.0,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: AssetImage('assets/images/gallery1.jpg'),
                             ),
                           ),
                           margin: EdgeInsets.symmetric(horizontal: 7.0),
@@ -1446,7 +1709,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         onTap: () {
                           Navigator.push(
                               context,
-                              new MaterialPageRoute(
+                              MaterialPageRoute(
                                   builder: (BuildContext context) =>
                                       MyPlaylistPage()));
                         },
@@ -1455,7 +1718,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           height: 150.0,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
+                              image: AssetImage('assets/images/gallery1.jpg'),
                             ),
                           ),
                           margin: EdgeInsets.symmetric(horizontal: 7.0),
@@ -1475,7 +1738,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         onTap: () {
                           Navigator.push(
                               context,
-                              new MaterialPageRoute(
+                              MaterialPageRoute(
                                   builder: (BuildContext context) =>
                                       MyPlaylistPage()));
                         },
@@ -1484,7 +1747,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           height: 150.0,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
+                              image: AssetImage('assets/images/gallery5.jpg'),
                             ),
                           ),
                           margin: EdgeInsets.symmetric(horizontal: 7.0),
@@ -1504,7 +1767,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         onTap: () {
                           Navigator.push(
                               context,
-                              new MaterialPageRoute(
+                              MaterialPageRoute(
                                   builder: (BuildContext context) =>
                                       MyPlaylistPage()));
                         },
@@ -1513,7 +1776,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           height: 150.0,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
+                              image: AssetImage('assets/images/gallery3.jpg'),
                             ),
                           ),
                           margin: EdgeInsets.symmetric(horizontal: 7.0),
@@ -1533,7 +1796,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         onTap: () {
                           Navigator.push(
                               context,
-                              new MaterialPageRoute(
+                              MaterialPageRoute(
                                   builder: (BuildContext context) =>
                                       MyPlaylistPage()));
                         },
@@ -1542,7 +1805,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           height: 150.0,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
+                              image: AssetImage('assets/images/gallery4.jpg'),
                             ),
                           ),
                           margin: EdgeInsets.symmetric(horizontal: 7.0),
@@ -1562,7 +1825,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         onTap: () {
                           Navigator.push(
                               context,
-                              new MaterialPageRoute(
+                              MaterialPageRoute(
                                   builder: (BuildContext context) =>
                                       MyPlaylistPage()));
                         },
@@ -1571,7 +1834,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           height: 150.0,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
+                              image: AssetImage('assets/images/gallery2.jpg'),
                             ),
                           ),
                           margin: EdgeInsets.symmetric(horizontal: 7.0),
@@ -1591,7 +1854,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         onTap: () {
                           Navigator.push(
                               context,
-                              new MaterialPageRoute(
+                              MaterialPageRoute(
                                   builder: (BuildContext context) =>
                                       MyPlaylistPage()));
                         },
@@ -1600,7 +1863,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           height: 150.0,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/cover.jpg'),
+                              image: AssetImage('assets/images/gallery6.jpg'),
                             ),
                           ),
                           margin: EdgeInsets.symmetric(horizontal: 7.0),
@@ -1629,7 +1892,7 @@ class _MyHomePageState extends State<MyHomePage> {
               onTap: () {
                 Navigator.push(
                     context,
-                    new MaterialPageRoute(
+                    MaterialPageRoute(
                         builder: (BuildContext context) => MySongPage()));
               },
               child: Container(
@@ -1702,23 +1965,23 @@ class _MyHomePageState extends State<MyHomePage> {
                   icon: Icon(
                     Icons.home,
                   ),
-                  title: new Text('Home'),
+                  title: Text('Home'),
                 ),
                 BottomNavigationBarItem(
                     icon: Icon(
                       Icons.search,
                     ),
-                    title: new Text('Search')),
+                    title: Text('Search')),
                 BottomNavigationBarItem(
                     icon: Icon(
                       Icons.playlist_play,
                     ),
-                    title: new Text('Your Library')),
+                    title: Text('Your Library')),
                 BottomNavigationBarItem(
                     icon: Icon(
                       Icons.verified_user,
                     ),
-                    title: new Text('Premium')),
+                    title: Text('Premium')),
               ],
               onTap: (index) {
                 _incrementTab(index);

@@ -1,4 +1,4 @@
-package co.shivamgoyal.spoton;
+package co.shivamgoyal.spotify;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;

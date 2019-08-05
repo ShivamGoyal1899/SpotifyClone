@@ -1,6 +1,9 @@
-name: SpotOn
-description: A new Flutter application.
-version: 1.0.0+1
+name: Spotify
+description: Spotify UI Clone
+version: 3.0.0+1
+author: Shivam Goyal
+homepage: https://shivamgoyal.co
+repository: https://github.com/ShivamGoyal1899/SpotifyClone
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
@@ -9,7 +12,6 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^0.1.2
-  fluttery_audio:
 
 dev_dependencies:
   flutter_test:

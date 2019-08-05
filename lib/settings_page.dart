@@ -1,4 +1,5 @@
-import 'package:SpotOn/song_page.dart';
+import 'home_page.dart';
+import 'song_page.dart';
 import 'package:flutter/material.dart';
 
 class MySettingsPage extends StatefulWidget {
@@ -25,6 +26,7 @@ class _MySettingsPageState extends State<MySettingsPage> {
         TextStyle(fontFamily: 'PT Sans', color: textColor, letterSpacing: 0.2);
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: true,
         centerTitle: true,
         title: Text(
           'Settings',
@@ -208,7 +210,6 @@ class _MySettingsPageState extends State<MySettingsPage> {
                       onChanged: (valueSlider) {
                         setState(() {
                           _valueSlider = valueSlider;
-
                         });
                       },
                     ),
@@ -562,7 +563,7 @@ class _MySettingsPageState extends State<MySettingsPage> {
                         style: textStyle.merge(TextStyle(
                             fontWeight: FontWeight.w500, fontSize: 18.0))),
                     Text(
-                        'SpotOn will switch to car view whenever Bluetooth is\ndetected in your car.',
+                        'Spotify will switch to car view whenever Bluetooth is\ndetected in your car.',
                         style: textStyle.merge(TextStyle(
                             fontWeight: FontWeight.w500,
                             fontSize: 13.0,
@@ -628,7 +629,7 @@ class _MySettingsPageState extends State<MySettingsPage> {
                     Text('Listening activity',
                         style: textStyle.merge(TextStyle(
                             fontWeight: FontWeight.w500, fontSize: 18.0))),
-                    Text('Share what I listen to with my followers on SpotOn.',
+                    Text('Share what I listen to with my followers on Spotify.',
                         style: textStyle.merge(TextStyle(
                             fontWeight: FontWeight.w500,
                             fontSize: 13.0,
@@ -671,12 +672,14 @@ class _MySettingsPageState extends State<MySettingsPage> {
                   ],
                 ),
                 Theme(
-
-                    data: Theme.of(context).copyWith(
-                      canvasColor: Colors.grey[900],
-                    ),
+                  data: Theme.of(context).copyWith(
+                    canvasColor: Colors.grey[900],
+                  ),
                   child: DropdownButton<String>(
-                    icon: Icon(Icons.arrow_drop_down, size: 24.0,),
+                    icon: Icon(
+                      Icons.arrow_drop_down,
+                      size: 24.0,
+                    ),
                     iconEnabledColor: Colors.grey[500],
                     items: [
                       DropdownMenuItem<String>(
@@ -722,13 +725,13 @@ class _MySettingsPageState extends State<MySettingsPage> {
                     ],
                     onChanged: (value) {
                       setState(() {
-                      _valueDrop = value;
+                        _valueDrop = value;
                       });
                     },
                     value: _valueDrop,
                     elevation: 2,
-                    style: textStyle.merge(TextStyle(
-                        fontWeight: FontWeight.w500, fontSize: 14.0)),
+                    style: textStyle.merge(
+                        TextStyle(fontWeight: FontWeight.w500, fontSize: 14.0)),
                     isDense: true,
                     iconSize: 40.0,
                   ),
@@ -847,7 +850,7 @@ class _MySettingsPageState extends State<MySettingsPage> {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Text('SpotOn Ad Partner Preferences',
+                    Text('Spotify Ad Partner Preferences',
                         style: textStyle.merge(TextStyle(
                             fontWeight: FontWeight.w500, fontSize: 18.0))),
                     Text(
@@ -1022,7 +1025,7 @@ class _MySettingsPageState extends State<MySettingsPage> {
               onTap: () {
                 Navigator.push(
                     context,
-                    new MaterialPageRoute(
+                    MaterialPageRoute(
                         builder: (BuildContext context) => MySongPage()));
               },
               child: Container(
@@ -1092,26 +1095,34 @@ class _MySettingsPageState extends State<MySettingsPage> {
               backgroundColor: Colors.grey[900],
               items: [
                 BottomNavigationBarItem(
-                  icon: Icon(
-                    Icons.home,
+                  icon: GestureDetector(
+                    child: Icon(
+                      Icons.home,
+                    ),
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (BuildContext context) => MyHomePage()));
+                    },
                   ),
-                  title: new Text('Home'),
+                  title: Text('Home'),
                 ),
                 BottomNavigationBarItem(
                     icon: Icon(
                       Icons.search,
                     ),
-                    title: new Text('Search')),
+                    title: Text('Search')),
                 BottomNavigationBarItem(
                     icon: Icon(
                       Icons.playlist_play,
                     ),
-                    title: new Text('Your Library')),
+                    title: Text('Your Library')),
                 BottomNavigationBarItem(
                     icon: Icon(
                       Icons.verified_user,
                     ),
-                    title: new Text('Premium')),
+                    title: Text('Premium')),
               ],
               onTap: (index) {
                 _incrementTab(index);

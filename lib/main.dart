@@ -1,7 +1,5 @@
-import 'package:SpotOn/settings_page.dart';
 import 'package:flutter/material.dart';
-import 'package:SpotOn/song_page.dart';
-import 'package:SpotOn/home_page.dart';
+import 'home_page.dart';
 
 void main() => runApp(MyApp());
 
